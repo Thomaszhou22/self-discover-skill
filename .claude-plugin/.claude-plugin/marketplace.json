@@ -1,0 +1,9 @@
+{
+  "name": "SELF-DISCOVER Reasoning",
+  "slug": "self-discover-reasoning",
+  "version": "1.0.0",
+  "description": "AI agents self-compose reasoning structures from seed modules.",
+  "author": "Thomas Zhou",
+  "repository": "https://github.com/Thomaszhou22/self-discover-skill",
+  "category": "reasoning"
+}

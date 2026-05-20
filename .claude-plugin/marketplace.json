@@ -1,0 +1,19 @@
+{
+  "name": "SELF-DISCOVER Reasoning",
+  "slug": "self-discover-reasoning",
+  "version": "1.0.0",
+  "description": "AI agents self-compose reasoning structures from seed modules. +24.6% improvement. Based on Zhou et al. (2024), NeurIPS.",
+  "author": "Thomas Zhou",
+  "repository": "https://github.com/Thomaszhou22/self-discover-skill",
+  "license": "MIT",
+  "category": "reasoning",
+  "tags": ["reasoning", "self-discover", "chain-of-thought", "problem-solving", "planning", "agentic"],
+  "compatibility": {
+    "openclaw": true,
+    "claude-code": true,
+    "cursor": true,
+    "copilot": true,
+    "codex": true,
+    "gemini-cli": true
+  }
+}
