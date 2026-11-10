@@ -1,6 +1,6 @@
 ---
 name: self-discover-reasoning
-version: 1.0.0
+version: 1.1.0
 description: AI agents self-compose task-specific reasoning structures from seed modules. Based on Zhou et al. (2024) SELF-DISCOVER, NeurIPS. Use when facing novel reasoning tasks, when standard chain-of-thought is insufficient, or when the agent needs to discover its own problem-solving strategy.
 license: MIT
 metadata:
