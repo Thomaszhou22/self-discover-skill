@@ -1,5 +1,6 @@
 ---
 name: self-discover-reasoning
+version: 1.0.0
 description: AI agents self-compose task-specific reasoning structures from seed modules. Based on Zhou et al. (2024) SELF-DISCOVER, NeurIPS. Use when facing novel reasoning tasks, when standard chain-of-thought is insufficient, or when the agent needs to discover its own problem-solving strategy.
 license: MIT
 metadata:
@@ -11,6 +12,29 @@ metadata:
 
 > An AI agent skill for self-composing task-specific reasoning structures.
 > Based on Zhou et al. (2024) — SELF-DISCOVER: Large Language Models Self-Compose Reasoning Structures.
+
+
+## Onboarding（首次使用）
+
+当用户第一次触发本 skill 且 `memory/self_discover_state.json` 不存在时，执行一次性引导：
+
+1. **介绍能力**（一句话）：_"我可以让 AI 在解难题前先自组合最适合的推理结构，而不是每次都用同一种思维链。"_
+
+2. **快速配置：**
+
+1. **推理偏好**（默认：混合）
+   - 分析型（分解/因果/假设检验优先）
+   - 创造型（类比/抽象/模式识别优先）
+   - 混合（自动选择）
+2. **是否缓存已发现的推理结构**（默认：是，避免重复计算）
+
+3. **写入初始状态文件** `memory/self_discover_state.json`（JSON 格式，含 `onboarded: true` 和时间戳）
+
+4. **确认完成**：_"设置完成！以后直接用就行。随时可以说'reset settings'重新配置。"_
+
+**Onboarding 只执行一次**，后续每次激活直接读取状态文件。用户说 "reset settings" 时删除状态文件重新引导。
+
+---
 
 ## Platform Auto-Detection
 
